@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "lib": ["es6", "es5", "es2020", "DOM", "DOM.Iterable"],
+    "declaration": true,
+    "outDir": "./",
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.*"],
+  "exclude": []
+}
