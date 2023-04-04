@@ -46,6 +46,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@foo/some-lib", [\
+        ["git+ssh://git@github.com:zantinger/some-lib.git#commit=f140240f86128541e4b17f81e058b80b0720fbea", {\
+          "packageLocation": "./.yarn/cache/@foo-some-lib-git+ssh-60e30875a5-cca4d6652f.zip/node_modules/@foo/some-lib/",\
+          "packageDependencies": [\
+            ["@foo/some-lib", "git+ssh://git@github.com:zantinger/some-lib.git#commit=f140240f86128541e4b17f81e058b80b0720fbea"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@gar/promisify", [\
         ["npm:1.1.3", {\
           "packageLocation": "./.yarn/cache/@gar-promisify-npm-1.1.3-ac1a325862-4059f790e2.zip/node_modules/@gar/promisify/",\
@@ -3495,6 +3504,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/project-one/",\
           "packageDependencies": [\
             ["project-one", "workspace:packages/project-one"],\
+            ["@foo/some-lib", "git+ssh://git@github.com:zantinger/some-lib.git#commit=f140240f86128541e4b17f81e058b80b0720fbea"],\
             ["clean-webpack-plugin", "virtual:5a5d291007c0d68e1b79c9ec20d6dfb4c2060cdc347afb0c51ba55b62ebdc664e8d35fb08a7c74eadbe9e5ea200124760c571467289280ae8c68f123564234c3#npm:4.0.0"],\
             ["html-webpack-plugin", "virtual:5a5d291007c0d68e1b79c9ec20d6dfb4c2060cdc347afb0c51ba55b62ebdc664e8d35fb08a7c74eadbe9e5ea200124760c571467289280ae8c68f123564234c3#npm:5.5.0"],\
             ["ts-loader", "virtual:5a5d291007c0d68e1b79c9ec20d6dfb4c2060cdc347afb0c51ba55b62ebdc664e8d35fb08a7c74eadbe9e5ea200124760c571467289280ae8c68f123564234c3#npm:9.4.2"],\

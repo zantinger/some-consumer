@@ -12,6 +12,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@foo/some-lib@git+ssh://git@github.com:zantinger/some-lib.git":
+  version: 1.0.0
+  resolution: "@foo/some-lib@git+ssh://git@github.com:zantinger/some-lib.git#commit=f140240f86128541e4b17f81e058b80b0720fbea"
+  checksum: cca4d6652f51d8d1deff233edae5d68d6f0f9e6f4287f6266c0809133a213037ecb27908460c8722b1cf2edda4c3f4dbd45a207565995bb099b636fa02656a42
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -2916,6 +2923,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "project-one@workspace:packages/project-one"
   dependencies:
+    "@foo/some-lib": "git+ssh://git@github.com:zantinger/some-lib.git"
     clean-webpack-plugin: ^4.0.0
     html-webpack-plugin: ^5.5.0
     ts-loader: ^9.4.2
